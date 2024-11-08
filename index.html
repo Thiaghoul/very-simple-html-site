@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz for programmers</title>
+        <meta name="description" content="A interactive quiz to test your knowledge!"> 
+    </head>
+    <body>
+        <header>
+            <h1>Interactive Quiz for programmers</h1>
+            <p>Test your knowledge in coding and get a score for it</p>
+        </header>
+        <main>
+            <!--Introduction-->
+            <section>
+                <h2>about this quiz</h2>
+                <p><strong>This quiz</strong> was developed to test your knowledge in coding, like <em>coding language</em>, basic concepts and more</p>
+                <p>You will find different types of questions, including multiple choices, text and date questions. <br>Challenge yourself in this quis!</p>
+                <p>You may find some acronyms such as <ABBr title="Hyper Text Markup Language"> HTML</ABBr> and <abbr title="Cascading Style Sheets ">CSS</abbr>, which are commonly used in issues related to web development.</p> 
+            </section> 
+            <!--First question : multiple choice-->
+            <section>
+                <h2><Strong></Strong>Question 1: What language is used to structure web pages:</Strong></h2>
+                <form>
+                    <input type="radio" value = "Python" id = "p1a" name = "question1"> 
+                    <label for="p1a">Python</label><br>
+                    <input type="radio" value = "Html" id = "p1b" name = "question1">
+                    <label for="p1b">HTML</label><br>
+                    <input type="radio" value = "Java" id = "p1c" name = "question1"> 
+                    <label for="p1c">Java</label><br>
+                    <input type="radio" value = "PHP" id = "p1d" name = "question1">
+                    <label for="p1d">PHP</label><br>
+                </form>
+            </section>
+            <!--Second question : text-->
+            <section>
+                <h2>Question 2: At the URL https://google.com "google.com" is ____:</h2>
+                <form>
+                    <input type="text" id="p2" name="question2" placeholder="Type here..."> 
+                </form>
+            </section>
+            <!--Third question : password-->
+            <section>
+                <h2>Question 3: Enter an exemple of a strong password</h2>
+                <form>
+                    <input type="password" id = "p3" name="question3" placeholder="Enter a password">
+                </form>
+            </section>
+            <!--Fourth question : data-->
+            <section>
+                <h2>Question 4: In what year did HTML release its first version?</h2>
+                <form>
+                    <input type="date" name="question4" id="p4">
+                </form>
+            </section>
+            <!--Fifth question : multiple selection-->
+            <section>
+                <h2>Question 5: Which of these technologies are considered programming language?</h2>
+                <form>
+                    <input type="checkbox" id="p5a" name = "question5"
+                    value="JavaScript">
+                    <label for="p5a">JavaScript</label>
+                    <input type="checkbox" id="p5b" name = question5 
+                    value="Python">
+                    <label for="p5b">Python</label>
+                    <input type="checkbox" id="p5c" name="question5"
+                    value="HTML">
+                    <label for="p5c">HTML</label>
+                    <input type="checkbox" id="p5d" name="question5"
+                    value="C#">
+                    <label for="p5d">C#</label>
+                </form>
+            </section>
+            <!--Sixth question : upload html file-->
+            <section>
+                <H2>Question 6: Upload a HTML file</H2>
+                <form>
+                    <input type="file" id="p6" name="question6">
+                </form>
+            </section>
+            <!--Seventh question : dropdown-->
+            <section>
+                <h2>Question 7: Select an attribute of the input that defines its type</h2>
+                <form>
+                    <select name="question7" id="p7">
+                        <option value="id">id</option>
+                        <option value="type">type</option>
+                        <option value="placeholder">placeholder</option>
+                    </select>
+                </form>
+            </section>
+            <!--Eigth question : image-->
+            <section>
+                <h2>Question 3: Which progamming language is represented by logo bellow?</h2>
+                <figure>
+                    <img src="./assets/java-logo.png" alt="programming language logo"> <br>
+                    <figcaption>Figure 1: programming language logo</figcaption>
+                </figure>
+                <section>
+                    <input type="text" id ="p8" name="question8" placeholder="Enter you answer...">
+                </section>
+            </section>
+            <!--Score table-->
+            <section>
+                <h2>Score Table</h2>
+                <table border="3">
+                    <thead>
+                        <tr>
+                            <td>Score</td>
+                            <td>Avaliation</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Dont give up! Each try is a new opportunitie to learn!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>You have yet a lot to learn!</td>
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Good job! You're going well.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>PERFECT! You clearly are really prepared for this!</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="2">Good luck next time</td>
+                    </tfoot>
+                </table>
+            </section>
+            <!--list of answers-->
+            <section>
+                <h2>Check your answers:</h2>
+                <details>
+                    <summary>Click here to see the answers</summary>
+                    <ol>
+                        <li>HTML</li>
+                        <li>domain</li>
+                        <li>Code123!</li>
+                        <li>1991</li>
+                        <li>JavaScript, Python and C#</li>
+                        <li>the file must have a .html extension</li>
+                        <li>type</li>
+                        <li>Java</li>
+                    </ol>
+                </details>
+            </section>
+            <!--Feedback form-->
+            <section>
+                <h2>Give us a feedback</h2>
+                <form>
+                    <fieldset>
+                        <legend>Contact information</legend>
+                        <label for="name">name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name..."><br>  
+                        <label for="email">email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..."><br>
+                        <label for="commentary">commentary:</label> <br>
+                        <textarea  id="commentary" name="commentary"
+                        rows="4" cols="50" placeholder="Enter your commentary..."></textarea> <br>
+                        <button onclick="alert('FEEDBACK SENT')">Send feedback</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Programmers quiz. All rights reserved </p>
+            <p><a href="aboutme.html" target="_blank">Click here</a> to know more about me</p>
+        </footer>
+    </body>
+</html>
